@@ -1,16 +1,12 @@
 # Question Generation Web App
-
-This is a simple Angular web application used to demonstrate the work of the [Question-Generation-Transformers](https://github.com/KristiyanVachev/Question-Generation-Transformers) repository. It accepts the given paragraph along with the desired number of questions and outputs each generated question with the ability to redact them (shown below). The algorithm is exposing a simple REST API using *flask* which is consumed by the web app.
-
-
-![question generation process](https://i.ibb.co/WFJjCgH/1-edited-fullscreen.png "Web application ")
+Cái này là web, chạy API thì mới chạy được tính năng, hong thì chỉ thấy cái web thôi
 
 
 ## Installation and running
 After you have installed node.js, install the packages using
 
-    npm install
+    npm install -r packages.json
 
-Then after you have launched the [Question-Generation-Transformers](https://github.com/KristiyanVachev/Question-Generation-Transformers)  REST API,  run the application using
+Chạy API xong,  chạy web bằng:
 
-    ng serve --open
+    npm run ng serve
