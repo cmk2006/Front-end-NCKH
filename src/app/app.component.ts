@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css', '_themes/minty-bootstrap.min.css']
 })
+
 export class AppComponent {
-  title = 'Leaf';
+  title = 'NCKH';
 }
