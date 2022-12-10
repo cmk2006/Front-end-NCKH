@@ -8,7 +8,7 @@ import { JsonPipe } from '@angular/common';
   selector: 'app-question-generation',
   templateUrl: './question-generation.component.html',
   // styleUrls: ['./question-generation.component.css', '../../../node_modules/bootstrap/dist/css/bootstrap.min.css']
-  styleUrls: ['./question-generation.component.css', '../_themes/minty-bootstrap.min.css']
+  styleUrls: ['./question-generation.component.css', '../_themes/landing-page-bootstrap.component.css']
 })
 export class QuestionGenerationComponent implements OnInit {
 
@@ -37,7 +37,7 @@ export class QuestionGenerationComponent implements OnInit {
 
     this.questionGenerationService.generate(req)
       .subscribe(questions => {
-        
+
         this.questions = []
         questions.forEach(questionJson => {
           this.questions.push(JSON.parse(JSON.parse(JSON.stringify(questionJson))))
@@ -47,16 +47,16 @@ export class QuestionGenerationComponent implements OnInit {
       });
   }
 
-  checkAnswer(quesiton: Question, answer: string){
-    if (quesiton.answerText == answer){
+  checkAnswer(quesiton: Question, answer: string) {
+    if (quesiton.answerText == answer) {
       alert("Yeeeeeey!")
     }
-    else{
+    else {
       alert("Wrooonong!")
     }
   }
 
-  addAnswers(){
+  addAnswers() {
     this.questions.forEach(q => {
       q.answers = [];
 
@@ -74,11 +74,11 @@ export class QuestionGenerationComponent implements OnInit {
 
   shuffle(a) {
     for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
-}
+  }
 
 
 

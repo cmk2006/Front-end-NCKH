@@ -438,16 +438,19 @@ h6,
 }
 
 .display-3 {
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  text-align: center;
+  line-height: 1.2
 }
+
 
 hr {
   margin-top: 1rem;
@@ -711,10 +714,14 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .col-container {
-  display: table-row  ; /* Make the container element behave like a table */
-  width: 80%; /* Set full-width to expand the whole page */
+  display: table-row;
+  /* Make the container element behave like a table */
+  width: 80%;
+  /* Set full-width to expand the whole page */
 }
+
 .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -728,7 +735,7 @@ pre code {
 .col-auto {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  width: 50% ;
+  width: 50%;
   max-width: auto;
 }
 
@@ -4867,15 +4874,16 @@ input[type="button"].btn-block {
 .card-img-top {
   margin-left: auto;
   margin-right: auto;
-  width: 70% ;
+  width: 70%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   padding: 0.3rem;
 }
+
 .card-img-top-2 {
   margin-left: auto;
   margin-right: auto;
-  width: 50% ;
+  width: 50%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   padding: 0.3rem;
@@ -5303,8 +5311,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
+  border-radius: 0.6rem
 }
 
 @media (min-width: 576px) {
@@ -6274,7 +6281,7 @@ button.close {
 
 .carousel-inner {
   margin-left: auto;
-  margin-right:auto;
+  margin-right: auto;
   position: relative;
   width: 80%;
   overflow: hidden;
@@ -6550,6 +6557,10 @@ button.bg-primary:focus {
 
 .bg-secondary {
   background-color: #6c757d !important;
+}
+
+.bg-black {
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 a.bg-secondary:hover,
