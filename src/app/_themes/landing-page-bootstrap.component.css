@@ -510,8 +510,9 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .img-thumbnail {
@@ -4870,12 +4871,13 @@ input[type="button"].btn-block {
 }
 
 .card-img-top {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   width: 70%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   padding: 0.3rem;
+  display:block;
 }
 
 .card-img-top-2 {

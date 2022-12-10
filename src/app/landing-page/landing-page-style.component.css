@@ -10,6 +10,24 @@ aside {
   font-style: italic;
   background-color: lightgray;
 }
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.25rem;
+  orphans: 1;
+  widows: 1;
+}
+.grid .card {
+  display: inline-block;
+  width: 100%;
+}
+.grid-2{
+  display:block;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  orphans: 1;
+  widows: 1;
+}
 
 .bg-black {
   background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
