@@ -614,8 +614,6 @@ pre code {
   width: 90%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .row {
@@ -5309,7 +5307,7 @@ input[type="button"].btn-block {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 2rem;
   border-radius: 0.6rem
 }
