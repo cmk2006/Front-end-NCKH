@@ -3,6 +3,7 @@ import { Question } from '../_models/quesiton'
 import { QuestionGenerationService } from '../question-generation.service';
 import { questionGenerationRequest } from '../_models/questionGenerationRequest';
 import { JsonPipe } from '@angular/common';
+import Excel from 'exceljs';
 
 @Component({
   selector: 'app-question-generation',
@@ -37,13 +38,11 @@ export class QuestionGenerationComponent implements OnInit {
 
     this.questionGenerationService.generate(req)
       .subscribe(questions => {
-
         this.questions = []
         questions.forEach(questionJson => {
           this.questions.push(JSON.parse(JSON.parse(JSON.stringify(questionJson))))
           this.addAnswers()
         });
-
       });
   }
 
@@ -56,6 +55,20 @@ export class QuestionGenerationComponent implements OnInit {
     }
   }
 
+  type question_ans = {
+    id:number;
+    question_main:text;
+    corr_ans:text;
+    incorrect_ans_1:text;
+    incorrect_ans_2:text;
+    incorrect_ans_3:text;
+  }
+
+  addtoExcel(){
+    this.questions.forEach(q=>{
+
+    });
+  }
   addAnswers() {
     this.questions.forEach(q => {
       q.answers = [];
