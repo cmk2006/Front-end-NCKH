@@ -3,8 +3,7 @@ import { Question } from '../_models/quesiton'
 import { QuestionGenerationService } from '../question-generation.service';
 import { questionGenerationRequest } from '../_models/questionGenerationRequest';
 import { JsonPipe } from '@angular/common';
-import Excel from 'exceljs';
-console.log(path);
+
 
 
 @Component({
