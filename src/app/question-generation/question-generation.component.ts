@@ -4,6 +4,8 @@ import { QuestionGenerationService } from '../question-generation.service';
 import { questionGenerationRequest } from '../_models/questionGenerationRequest';
 import { JsonPipe } from '@angular/common';
 import Excel from 'exceljs';
+console.log(path);
+
 
 @Component({
   selector: 'app-question-generation',
@@ -55,21 +57,7 @@ export class QuestionGenerationComponent implements OnInit {
     }
   }
 
-  type question_ans = {
-    id:number;
-    question_main:text;
-    corr_ans:text;
-    incorrect_ans_1:text;
-    incorrect_ans_2:text;
-    incorrect_ans_3:text;
-  }
-
-  addtoExcel(){
-    this.questions.forEach(q=>{
-
-    });
-  }
-  addAnswers() {
+  addAnswers(){
     this.questions.forEach(q => {
       q.answers = [];
 
